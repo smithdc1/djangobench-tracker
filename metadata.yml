@@ -1,0 +1,5 @@
+databases:
+  django:
+    tables:
+      commits:
+        sort_desc: committer_date
