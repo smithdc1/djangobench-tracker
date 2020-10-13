@@ -1,2 +1,9 @@
 datasette==0.49.1
 github-to-sqlite==2.6
+
+# Djangobench
+git+git://github.com/django/djangobench.git#egg=djangobench
+
+# Django
+pytz # Need to install django dependencies?
+
