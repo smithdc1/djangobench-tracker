@@ -1,4 +1,4 @@
-datasette==0.49.1
+datasette==0.50.2
 github-to-sqlite==2.6
 
 # Djangobench
