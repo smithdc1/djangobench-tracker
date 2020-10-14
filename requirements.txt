@@ -1,5 +1,6 @@
 datasette==0.50.2
 github-to-sqlite==2.6
+datasette-vega==0.6.2
 
 # Djangobench
 git+git://github.com/django/djangobench.git#egg=djangobench
