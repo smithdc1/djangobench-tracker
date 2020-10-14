@@ -16,9 +16,8 @@ def run_bench():
             control = commits[idx + 1]
             break
 
-    print(control, experiment)
     os.chdir('django')
-    run_benchmarks(control, experiment, DEFAULT_BENCHMARK_DIR, benchmarks, 5, vcs='git', record_dir="../json_output")
+    run_benchmarks(control, experiment, DEFAULT_BENCHMARK_DIR, benchmarks, 50, vcs='git', record_dir="../json_output")
 
 
 if __name__ == '__main__':
