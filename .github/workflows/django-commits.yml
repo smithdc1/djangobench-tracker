@@ -50,5 +50,5 @@ jobs:
       env:
         HEROKU_API_KEY: ${{ secrets.HEROKU_API_KEY }}
       run: |
-        heroku container:login && heroku plugins:install heroku-builds && datasette publish heroku django.db --name djangobench-tracker --metadata metadata.yml
+        heroku container:login && heroku plugins:install heroku-builds && datasette publish heroku django.db --install=datasette-vega --name djangobench-tracker --metadata metadata.yml
 
