@@ -6,4 +6,5 @@ git+git://github.com/django/djangobench.git#egg=djangobench
 
 # Django
 pytz # Need to install django dependencies?
+sqlparse
 
