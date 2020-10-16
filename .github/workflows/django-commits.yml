@@ -4,10 +4,6 @@
 name: Python package
 
 on:
-  push:
-    branches: [ main ]
-  pull_request:
-  workflow_dispatch:
   schedule:
     - cron: '5,20,35,50 * * * *'
 
@@ -36,9 +32,11 @@ jobs:
     - name: Run data collection
       run: |
         github-to-sqlite commits django.db django/django
-    - name: run benchmarks
+    - name: Clone Django
       run: |
         git clone https://github.com/django/django
+    - name: run benchmarks
+      run: |
         python run_benchmarks.py
         python save_data.py
     - uses: stefanzweifel/git-auto-commit-action@v4
